@@ -1,0 +1,16 @@
+n=int(input())
+mylist=[]
+for i in range(n):
+    mylist.append(input())
+k=int(input("enter the num:"))
+tot=0
+pos=-1
+for word in mylist:
+    if tot+len(word)>k:
+        pos=k-tot
+    tot+=len(mylist)
+if pos==-1:
+    print("out of bound")
+else:
+    print(pos)
+    
