@@ -1,0 +1,10 @@
+n=int(input())
+templist=[]
+
+for i in range(n):
+    templist.append(int(input()))
+sumi=0
+mytuple=tuple(templist)
+print(sum(mytuple))
+    
+
