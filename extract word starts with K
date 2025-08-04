@@ -1,10 +1,13 @@
 n=int(input())
 mylist=[]
 newlist=[]
+count=0
 for i in range(n):
     mylist.append(input())
 k=input("enter the num:")
 for word in mylist:
     if word.startswith(k):
         newlist.append(word)
+        count+=1
 print(newlist)
+print(count)
