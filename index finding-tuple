@@ -1,0 +1,17 @@
+n=int(input())
+templist=[]
+
+for i in range(n):
+    templist.append(input())
+mytuple=tuple(templist)
+k=input("enter the word:")
+for word in range(len(mytuple)):
+    found=False
+    if mytuple[word]==k:
+        print(word)
+        found=True
+        break
+if not found:
+    print("not found")
+    
+
