@@ -1,0 +1,18 @@
+n=int(input("Enter number of values:")) 
+mylist=[] 
+ 
+for i in range(n): 
+    mylist.append(input("Enter value:",)) 
+pref=input("enter prefix:")
+res=[]
+temp=[]
+for word in mylist:
+    if word.startswith(pref):
+        if temp:
+            res.append(temp)
+        temp=[word]
+    else:
+        temp.append(word)
+if temp:
+    res.append(temp)
+print(res)
