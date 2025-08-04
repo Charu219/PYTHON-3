@@ -1,0 +1,11 @@
+n=int(input("Enter number of values:")) 
+mylist=[] 
+ 
+for i in range(n): 
+    mylist.append(input("Enter value:",)) 
+     
+newlist=[]
+for word in mylist:
+    splitword=word.split()
+    newlist.append(splitword)
+print(newlist)
