@@ -1,0 +1,10 @@
+word=input().split()
+wordset=set(word)
+count=0
+for i in word:
+    rev=i[::-1]
+    if (rev in wordset) and rev!=word:
+        count+=1 
+        wordset.remove(i)
+        wordset.remove(rev)
+print(count)
