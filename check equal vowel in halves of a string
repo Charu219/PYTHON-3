@@ -1,0 +1,22 @@
+word=input()
+if(len(word)%2!=0):
+    print("Invalid")
+else:
+    length=len(word)//2
+    s1,s2=word[:length],word[length:]
+    vowels="aeiouAEIOU"
+    
+    vowCount1=0
+    for ch in s1:
+        if ch in vowels:
+            vowCount1+=1
+    
+    vowCount2=0
+    for ch in s2:
+        if ch in vowels:
+            vowCount2+=1
+    
+    if vowCount1==vowCount2:
+        print("Valid")
+    else:
+        print("Invalid")
