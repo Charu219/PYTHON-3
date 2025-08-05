@@ -1,0 +1,13 @@
+n=int(input())
+mylist=[]
+for i in range(n):
+    mylist.append(input())
+char='g'
+for word in mylist:
+    res=""
+    for ch in word:
+        if ch!=char:
+            res+="*"
+        else:
+            res+=ch
+    print(res)
