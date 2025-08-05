@@ -1,0 +1,9 @@
+words=input().split()
+maxlen=0
+for word in words:
+    if len(word)>maxlen:
+        maxlen=len(word)
+for word in words:
+    if maxlen==len(word):
+        print(word)
+        
