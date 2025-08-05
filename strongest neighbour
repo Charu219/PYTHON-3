@@ -1,0 +1,12 @@
+n=int(input())
+mylist=[]
+for i in range(n):
+    mylist.append(input())
+for i in range(1,len(mylist)):
+    if mylist[i]>mylist[i-1]:
+        print(mylist[i])
+    else:
+        print(mylist[i-1])
+    
+    
+    
