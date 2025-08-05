@@ -1,0 +1,8 @@
+line=input()
+word=line.split()
+res=""
+for i in word:
+    res+=''.join(i[0].upper()+i[1:]+" ")
+    
+print(res)
+    
