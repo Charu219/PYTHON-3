@@ -1,0 +1,12 @@
+word=input().split()
+prefix=input()
+count=0
+words=[]
+for i in word:
+    if i.startswith(prefix):
+        count+=1
+        words.append(i)
+print(count)
+for i in words:
+    print(i,end=" ")
+        
